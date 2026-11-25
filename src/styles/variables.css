@@ -1,0 +1,100 @@
+/* SRMS Design System - Central CSS Variables */
+:root {
+  /* Brand Primary & Interactive Colors */
+  --color-primary: #1e3a8a;          /* Collegiate Royal Blue */
+  --color-primary-hover: #1d4ed8;    /* Interactive Accent Blue */
+  --color-primary-light: #eff6ff;    /* Soft Tint Background */
+  --color-primary-text: #172554;
+  --color-accent: #dc2626;           /* Subtle Crimson / Alert Red */
+  --color-accent-hover: #b91c1c;
+
+  /* Neutral Canvas - Light Theme */
+  --color-bg-main: #f8fafc;          /* Slate Light Grey */
+  --color-bg-card: #ffffff;          /* Pure White */
+  --color-bg-sidebar: #0f172a;       /* Deep Navy Sidebar */
+  --color-sidebar-text: #cbd5e1;     /* Slate Silver */
+  --color-sidebar-active: #1e293b;   /* Active Item Navy */
+  --color-border: #e2e8f0;           /* Subtle Border Line */
+  --color-border-hover: #cbd5e1;
+
+  /* Typography Colors */
+  --color-text-primary: #0f172a;     /* Deep Slate / Dark Navy */
+  --color-text-secondary: #64748b;   /* Muted Slate Grey */
+  --color-text-muted: #94a3b8;       /* Subtle Hint Text */
+  --color-text-white: #ffffff;
+
+  /* Semantic Feedback */
+  --color-success: #16a34a;          /* Emerald Green */
+  --color-success-bg: #dcfce7;
+  --color-success-text: #14532d;
+  
+  --color-warning: #d97706;          /* Warm Amber */
+  --color-warning-bg: #fef3c7;
+  --color-warning-text: #78350f;
+  
+  --color-danger: #dc2626;           /* Crimson Red */
+  --color-danger-bg: #fee2e2;
+  --color-danger-text: #7f1d1d;
+  
+  --color-info: #0284c7;             /* Sky Blue */
+  --color-info-bg: #e0f2fe;
+  --color-info-text: #075985;
+
+  /* Shadows & Elevations */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  /* Layout Dimensions */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 76px;
+  --navbar-height: 68px;
+  --transition-speed: 0.22s ease-in-out;
+}
+
+/* Dark Theme Overrides */
+[data-theme='dark'] {
+  --color-bg-main: #0b0f19;
+  --color-bg-card: #151c2e;
+  --color-bg-sidebar: #090d16;
+  --color-sidebar-text: #94a3b8;
+  --color-sidebar-active: #1a233a;
+  --color-border: #232d45;
+  --color-border-hover: #334155;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-white: #ffffff;
+
+  --color-primary-light: #172554;
+  --color-primary-text: #bfdbfe;
+
+  --color-success-bg: #064e3b;
+  --color-success-text: #86efac;
+
+  --color-warning-bg: #451a03;
+  --color-warning-text: #fde68a;
+
+  --color-danger-bg: #450a0a;
+  --color-danger-text: #fca5a5;
+
+  --color-info-bg: #082f49;
+  --color-info-text: #7dd3fc;
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}

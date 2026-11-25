@@ -1,0 +1,98 @@
+/* SRMS Responsive Breakpoints */
+
+/* Tablet (1024px and down) */
+@media (max-width: 1024px) {
+  .stat-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-container {
+    padding: 1.5rem;
+  }
+
+  .navbar-center {
+    max-width: 320px;
+  }
+}
+
+/* Mobile Devices (768px and down) */
+@media (max-width: 768px) {
+  /* Sidebar Drawer Navigation */
+  .sidebar {
+    transform: translateX(-100%);
+    width: 270px !important;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-collapse-btn {
+    display: none;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Backdrop Overlay */
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    backdrop-filter: blur(2px);
+    transition: opacity var(--transition-speed);
+  }
+
+  /* Top Navbar */
+  .top-navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-center {
+    display: none; /* Hide top search bar on small mobile screens */
+  }
+
+  .breadcrumb-box {
+    display: none;
+  }
+
+  .user-meta-text {
+    display: none; /* Hide name/role on mobile, show avatar only */
+  }
+
+  .user-profile-chip {
+    padding: 2px;
+    background: transparent;
+    border: none;
+  }
+
+  /* Content Area */
+  .page-container {
+    padding: 1rem;
+  }
+
+  .stat-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .quick-actions-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid-two-col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
